@@ -34,6 +34,12 @@ We have a private constructor only allowing the method inside to truly help the 
 * Didn't complete the border builder methods.
 * assignTruckId() Goes ahead and does a basic increase per Food truck entered to give it a unique id. Wasn't able to finish my other way to effective guarantee a unique ID.
 
+### Techniques and topics
+* Array and for loops
+* Non static class/ Object
+* Private vs public variables
+* 
+
 ### What I have learned.
 * Arrays can lead to a stress of going into a rabbits hole and leave you wondering if you went down the wrong tunnel. Remember something to leave a trail to get you back on track.
 * also learned that sometimes just keeping it simple is a better idea. reduces confusion and errors.
