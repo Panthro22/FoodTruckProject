@@ -32,7 +32,6 @@ public class FoodTruckApp {
 			}
 		}
 		while(menuChoiceOption != 4) {
-		
 		menuChoiceOption = trucks.menuChoice(kb, topFive);
 		
 		

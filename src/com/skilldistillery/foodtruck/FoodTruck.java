@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class FoodTruck {
 	private String truckName;
 	private String foodType;
-	private int foodTruckId;
+	private int foodTruckId;//foodTruckId++ will work as well.
 	private double foodTruckRating;
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -201,133 +201,148 @@ public class FoodTruck {
 	}
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	
+	public void printTopBorder() {
+		
+	}
+	
+	public void printSidesBorder() {
+		
+	}
+	
+	public void printBottemBorder() {
+		
+	}
+	
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 	public int assignTruckId(String truckName) {
 		int id = 0;
 		String stringId = "";
 		char singleChar[] = truckName.toCharArray();
-		
-		for(int iteration = 0; iteration < truckName.length(); iteration++) {
-				if ((singleChar[iteration] >= 'A' && singleChar[iteration] <= 'Z') || (singleChar[iteration] >= 'a' && singleChar[iteration] <= 'z')) {
-			switch(singleChar[iteration]) {
-				case 'a':
-				case 'A':
-					stringId +="65";
-					break;
-				case 'b':
-				case 'B':
-					stringId +="66";
-					break;
-				case 'c':
-				case 'C':
-					stringId +="67";
-					break;
-				case 'd':
-				case 'D':
-					stringId +="68";
-					break;
-				case 'e':
-				case 'E':
-					stringId +="69";
-					break;
-				case 'f':
-				case 'F':
-					stringId +="70";
-					break;
-				case 'g':
-				case 'G':
-					stringId +="71";
-					break;
-				case 'h':
-				case 'H':
-					stringId +="72";
-					break;
-				case 'i':
-				case 'I':
-					stringId +="73";
-					break;
-				case 'j':
-				case 'J':
-					stringId +="74";
-					break;
-				case 'k':
-				case 'K':
-					stringId +="75";
-					break;
-				case 'l':
-				case 'L':
-					stringId +="76";
-					break;
-				case 'm':
-				case 'M':
-					stringId +="77";
-					break;
-				case 'n':
-				case 'N':
-					stringId +="78";
-					break;
-				case 'o':
-				case 'O':
-					stringId +="79";
-					break;
-				case 'p':
-				case 'P':
-					stringId +="80";
-					break;
-				case 'q':
-				case 'Q':
-					stringId +="81";
-					break;
-				case 'r':
-				case 'R':
-					stringId +="82";
-					break;
-				case 's':
-				case 'S':
-					stringId +="83";
-					break;
-				case 't':
-				case 'T':
-					stringId +="84";
-					break;
-				case 'u':
-				case 'U':
-					stringId +="85";
-					break;
-				case 'v':
-				case 'V':
-					stringId +="86";
-					break;
-				case 'w':
-				case 'W':
-					stringId +="87";
-					break;
-				case 'x':
-				case 'X':
-					stringId +="88";
-					break;
-				case 'y':
-				case 'Y':
-					stringId +="89";
-					break;
-				case 'z':
-				case 'Z':
-					stringId +="90";
-					break;
-				default:
-					System.out.println("What a name");
-					break;
-			}
-			}
-				else {
-					// skip anything that isn't a U.S. letter
-				}
-		}
-		
-		char idChar[] = stringId.toCharArray();
-		for(int iteration = 0; iteration < truckName.length(); iteration++) {
-		id +=(int)idChar[iteration];
-		}
-		id += 123456;//Just for extra kick... Get it to be at least 6 digit long;
+		id = foodTruckId++;
+//		
+//		for(int iteration = 0; iteration < truckName.length(); iteration++) {
+//				if ((singleChar[iteration] >= 'A' && singleChar[iteration] <= 'Z') || (singleChar[iteration] >= 'a' && singleChar[iteration] <= 'z')) {
+//			switch(singleChar[iteration]) {
+//				case 'a':
+//				case 'A':
+//					stringId +="65";
+//					break;
+//				case 'b':
+//				case 'B':
+//					stringId +="66";
+//					break;
+//				case 'c':
+//				case 'C':
+//					stringId +="67";
+//					break;
+//				case 'd':
+//				case 'D':
+//					stringId +="68";
+//					break;
+//				case 'e':
+//				case 'E':
+//					stringId +="69";
+//					break;
+//				case 'f':
+//				case 'F':
+//					stringId +="70";
+//					break;
+//				case 'g':
+//				case 'G':
+//					stringId +="71";
+//					break;
+//				case 'h':
+//				case 'H':
+//					stringId +="72";
+//					break;
+//				case 'i':
+//				case 'I':
+//					stringId +="73";
+//					break;
+//				case 'j':
+//				case 'J':
+//					stringId +="74";
+//					break;
+//				case 'k':
+//				case 'K':
+//					stringId +="75";
+//					break;
+//				case 'l':
+//				case 'L':
+//					stringId +="76";
+//					break;
+//				case 'm':
+//				case 'M':
+//					stringId +="77";
+//					break;
+//				case 'n':
+//				case 'N':
+//					stringId +="78";
+//					break;
+//				case 'o':
+//				case 'O':
+//					stringId +="79";
+//					break;
+//				case 'p':
+//				case 'P':
+//					stringId +="80";
+//					break;
+//				case 'q':
+//				case 'Q':
+//					stringId +="81";
+//					break;
+//				case 'r':
+//				case 'R':
+//					stringId +="82";
+//					break;
+//				case 's':
+//				case 'S':
+//					stringId +="83";
+//					break;
+//				case 't':
+//				case 'T':
+//					stringId +="84";
+//					break;
+//				case 'u':
+//				case 'U':
+//					stringId +="85";
+//					break;
+//				case 'v':
+//				case 'V':
+//					stringId +="86";
+//					break;
+//				case 'w':
+//				case 'W':
+//					stringId +="87";
+//					break;
+//				case 'x':
+//				case 'X':
+//					stringId +="88";
+//					break;
+//				case 'y':
+//				case 'Y':
+//					stringId +="89";
+//					break;
+//				case 'z':
+//				case 'Z':
+//					stringId +="90";
+//					break;
+//				default:
+//					System.out.println("What a name");//Just in case anything else besides a letter is being evaluated at this point.
+//					break;
+//			}
+//			}
+//				else {
+//					// skip anything that isn't a U.S. letter
+//				}
+//		}
+//		
+//		char idChar[] = stringId.toCharArray();
+//		for(int iteration = 0; iteration < truckName.length(); iteration++) {
+//		id +=(int)idChar[iteration]+123456;
+//		}
+
 		return id;
 	}
 }
