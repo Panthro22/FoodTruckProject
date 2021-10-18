@@ -130,38 +130,38 @@ public class FoodTruck {
 	}
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-
-	public String getTruckName() {
-		return truckName;
-	}
-
-	public void setTruckName(String truckName) {
-		this.truckName = truckName;
-	}
-
-	public String getFoodType() {
-		return foodType;
-	}
-
-	public void setFoodType(String foodType) {
-		this.foodType = foodType;
-	}
-
-	public int getFoodTruckId() {
-		return foodTruckId;
-	}
-
-	public void setFoodTruckId(int foodTruckId) {
-		this.foodTruckId = foodTruckId;
-	}
-
+//practice using the getters and setter eclipse makes.
+//	public String getTruckName() {
+//		return truckName;
+//	}
+//
+//	public void setTruckName(String truckName) {
+//		this.truckName = truckName;
+//	}
+//
+//	public String getFoodType() {
+//		return foodType;
+//	}
+//
+//	public void setFoodType(String foodType) {
+//		this.foodType = foodType;
+//	}
+//
+//	public int getFoodTruckId() {
+//		return foodTruckId;
+//	}
+//
+//	public void setFoodTruckId(int foodTruckId) {
+//		this.foodTruckId = foodTruckId;
+//	}
+//
 	public double getFoodTruckRating() {
 		return foodTruckRating;
 	}
-
-	public void setFoodTruckRating(double foodTruckRating) {
-		this.foodTruckRating = foodTruckRating;
-	}
+//
+//	public void setFoodTruckRating(double foodTruckRating) {
+//		this.foodTruckRating = foodTruckRating;
+//	}
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	
 	public double getAverageRating(FoodTruck[] truckList) {
@@ -201,17 +201,17 @@ public class FoodTruck {
 	}
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	
-	public void printTopBorder() {
-		
-	}
-	
-	public void printSidesBorder() {
-		
-	}
-	
-	public void printBottemBorder() {
-		
-	}
+//	public void printTopBorder() {
+//		
+//	}
+//	
+//	public void printSidesBorder() {
+//		
+//	}
+//	
+//	public void printBottemBorder() {
+//		
+//	}
 	
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
